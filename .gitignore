@@ -1,0 +1,30 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories (Never commit this, it's huge)
+node_modules/
+jspm_packages/
+
+# Production build output
+dist/
+build/
+
+# Environmental variables (CRITICAL: Keeps your secrets safe)
+.env
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and text editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
