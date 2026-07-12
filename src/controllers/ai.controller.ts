@@ -61,9 +61,9 @@ export class AIController {
         const problem = (await Problem.findOne({ problemtitle: problemTitle }).lean().exec()) as any;
         if (problem) {
           const comments = await Comment.find({ initialPostId: problem._id }).lean().exec();
-          
+
           let problemContext = `\nContext on target problem:\n- Title: ${problem.problemtitle}\n- Difficulty: ${problem.difficulty}\n- Topics: ${problem.topicnameslug.join(', ')}\n- Leetcode: ${problem.leetcodeLink || 'N/A'}`;
-          
+
           if (comments.length > 0) {
             problemContext += `\n- Student Discussions/Comments:\n${comments.map(c => `  * ${c.user}: ${c.data}`).join('\n')}`;
           }
