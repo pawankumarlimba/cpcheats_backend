@@ -1,4 +1,4 @@
-import { HttpError, type RunCodeRequestBody, type RunResult } from "../types/codeExecution.types"
+import { HttpError, type RunCodeRequestBody, type RunResult } from "../types/codeExecution.types.js"
 
 export class Judge0Service {
     private static readonly BASE_URL =

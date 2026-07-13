@@ -1,6 +1,6 @@
 import type { Request, Response } from "express"
-import { Judge0Service } from "../services/judge0.service"
-import { HttpError, type RunCodeRequestBody } from "../types/codeExecution.types"
+import { Judge0Service } from "../services/judge0.service.js"
+import { HttpError, type RunCodeRequestBody } from "../types/codeExecution.types.js"
 
 class CodeExecutionController {
     private readonly service: Judge0Service

@@ -5,7 +5,7 @@ import { commentController } from '../controllers/comment.controller.js';
 import { aiController } from '../controllers/ai.controller.js';
 import { algorithmController } from '../controllers/algorithm.controller.js';
 import { interviewController } from '../controllers/interview.controller.js';
-import { codeExecutionController } from '../controllers/codeExecution.controller';
+import { codeExecutionController } from '../controllers/codeExecution.controller.js';
 const router = Router();
 
 // --- Client / Auth Routes ---
