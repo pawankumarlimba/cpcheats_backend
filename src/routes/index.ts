@@ -46,7 +46,7 @@ router.post('/google-api', aiController.generateDSAResponse);
 router.post('/algorithm/algorithm-find', algorithmController.findAlgorithm);
 router.post('/algorithm/algorithm-search', algorithmController.searchAlgorithm);
 router.post('/algorithm/algorithm-sidebar', algorithmController.getSidebar);
-router.post('/algorithm/show-home-algorithm', algorithmController.getHomeAlgorithms);
+router.get('/algorithm/show-home-algorithm', algorithmController.getHomeAlgorithms);
 router.post('/algorithm-details/algorithm-details-find', algorithmController.getAlgorithmDetails);
 router.post('/algorithm-details/algorithm-question', algorithmController.getAlgorithmQuestions);
 
